@@ -1,0 +1,104 @@
+.primary {
+  --bg-default: #8257E5;
+  --bg-hover: #9674E6;
+}
+
+.secondary {
+  --bg-default: #3C3748;
+  --bg-hover: #6A617F;
+}
+
+.tertiary {
+  --bg-default: tranparent;
+  --bg-hover: #6a617f23;
+}
+
+body {
+  background-color: #0B0911;
+
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* primary */
+
+.container-primary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+button {
+  background-color: var(--bg-default);
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 24px;
+  gap: 8px;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+button:hover {
+  background-color: var(--bg-hover);
+  transition: 0.2s;
+}
+
+button:focus {
+  outline: 2px solid #D9CDF7;
+}
+
+button:disabled {
+  background-color: var(--bg-default);
+  opacity: 0.56;
+  cursor: not-allowed;
+}
+
+.loading-button {
+  cursor: wait;
+}
+
+.moveble {
+  cursor: move;
+}
+
+/* secondary */
+
+.container-secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* tertiary */
+
+.container-tertiary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* animation */
+
+.loading {
+  animation: loading infinite linear 2s;
+}
+
+@keyframes loading {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}

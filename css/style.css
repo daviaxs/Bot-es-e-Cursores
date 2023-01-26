@@ -51,11 +51,12 @@ button {
 
 button:hover {
   background-color: var(--bg-hover);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 button:focus {
   outline: 2px solid #D9CDF7;
+  transition: 0s;
 }
 
 button:disabled {
